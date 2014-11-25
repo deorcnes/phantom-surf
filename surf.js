@@ -38,7 +38,7 @@ var listening = server.listen(port, function (request, response)
 							var png = page.renderBase64("PNG");
 							response.statusCode = 200;
 							response.headers = {"Cache": "no-cache", "Content-Type": "text/html"};
-							response.write("<html><head><title>Page Loaded</title></head><body>");
+							response.write("<html><head><title>PhantomSurf - " + currentAddress + "</title></head><body>");
 							response.write('<img src="data:image/png;base64,'+png+'"/>');
 							response.write("</body></html>");
 							response.close();
@@ -52,7 +52,7 @@ var listening = server.listen(port, function (request, response)
 					var png = page.renderBase64("PNG");
 					response.statusCode = 200;
 					response.headers = {"Cache": "no-cache", "Content-Type": "text/html"};
-					response.write("<html><head><title>Page Shot</title></head><body>");
+					response.write("<html><head><title>PhantomSurf - " + currentAddress + "</title></head><body>");
 					response.write('<img src="data:image/png;base64,'+png+'"/>');
 					response.write("</body></html>");
 					response.close();

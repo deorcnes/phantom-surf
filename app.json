@@ -9,9 +9,6 @@
   "repository": "https://github.com/deorcnes/phantom-surf",
   "logo": "http://icons.iconarchive.com/icons/iconka/cat-halloween/128/cat-ghost-icon.png",
   "success_url": "/",
-  "scripts": {
-    
-  },
   "env": {
     "BUILDPACK_URL": "https://github.com/stomita/heroku-buildpack-phantomjs.git",
     "SECRET_TOKEN": {
@@ -22,8 +19,5 @@
       "description": "The number of processes to run.",
       "value": "1"
     }
-  },
-  "addons": [
-
-  ]
+  }
 }

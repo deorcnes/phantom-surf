@@ -3,7 +3,7 @@
   "description": "A one-click deploy app for remote browsing on Heroku using PhantomJS",
   "keywords": [
     "productivity",
-    "HTML5",
+    "HTML5"
   ],
   "website": "https://github.com/deorcnes/phantom-surf",
   "repository": "https://github.com/deorcnes/phantom-surf",

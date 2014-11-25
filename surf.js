@@ -26,9 +26,9 @@ var listening = server.listen(port, function (request, response)
             var params = URLToArray(request.url);
             output = "g.png";
             page.viewportSize = { width: 800, height: 600 };
-			if(currentAddress == null)
-			{
-				address = params["url"];
+			address = params["url"];
+			if(currentAddress != address)
+			{				
 				page.open(address, function (status) {
 					if (status !== 'success') {
 						console.log('Unable to load the address!');
@@ -68,7 +68,7 @@ var listening = server.listen(port, function (request, response)
             // note: the headers above will now be sent implictly
             response.write("<html><head><title>PhantomSurf</title></head>");
             // note: writeBody can be called multiple times
-            response.write("<body><p>Specify a URL to surf to</body></html>");
+            response.write("<body><p>Specify a URL to surf to:</><form><input type='text' name='url' size='100'><br><input type='submit' value='Submit'></form></body></html>");
             response.close();       
         }
     } 

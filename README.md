@@ -6,7 +6,7 @@ This is a one-click deploy app for remote browsing on Heroku using PhantomJS.
 Usage
 -----
 
-[![Deploy](https://www.herokucdn.com/deploy/button.png)](https://heroku.com/deploy)
+[![Deploy](https://www.herokucdn.com/deploy/button.png)](https://heroku.com/deploy?template=https://github.com/deorcnes/phantom-surf)
 
 Click this button to deploy this app to Heroku.
 
